@@ -1,0 +1,24 @@
+
+/* Hide the Python console */
+#pyconsole {
+    display: None;
+}
+
+/* Unset the overly generic pyscript .label style */
+#placeholder .label {
+    margin-top: inherit;
+    color: inherit;
+    text-align: inherit;
+    width: inherit;
+    display: inherit;
+    color: inherit;
+    font-size: inherit;
+    margin-top: inherit;
+
+}
+
+/*******************************************************************
+ * WARNING: Do not remove or modify this comment block, or add any
+ * content below this block. Briefcase will add content here during
+ * the build step.
+ ******************** Wheel contributed styles ********************/

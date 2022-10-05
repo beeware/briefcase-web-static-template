@@ -3,4 +3,4 @@
 app_path = "app"
 app_requirements_path = "requirements.txt"
 
-icon = "www/static/favicon.png"
+icon.32 = "www/static/logo-32.png"
