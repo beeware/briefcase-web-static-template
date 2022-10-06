@@ -5,7 +5,7 @@
 }
 
 /* Unset the overly generic pyscript .label style */
-#placeholder .label {
+#app-placeholder .label {
     margin-top: inherit;
     color: inherit;
     text-align: inherit;
