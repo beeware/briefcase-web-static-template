@@ -1,6 +1,6 @@
 
 /* Hide the Python console */
-#pyconsole {
+py-terminal {
     display: None;
 }
 

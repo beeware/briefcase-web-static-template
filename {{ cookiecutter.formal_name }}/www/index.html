@@ -21,7 +21,7 @@
     <body>
         <div id="app-placeholder"></div>
 
-        <code id="pyconsole"></code>
+        <py-terminal></py-terminal>
 
 {% if cookiecutter.style_framework == "Bootstrap v4.6" %}
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -33,7 +33,7 @@
 {% endif %}
 
         <py-config src="/pyscript.toml"></py-config>
-        <py-script output="pyconsole">
+        <py-script>
             import runpy
             result = runpy.run_module("{{ cookiecutter.module_name }}", run_name="__main__", alter_sys=True)
         </py-script>
