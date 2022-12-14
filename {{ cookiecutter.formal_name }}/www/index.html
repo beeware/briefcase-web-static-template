@@ -20,9 +20,6 @@
     </head>
     <body>
         <div id="app-placeholder"></div>
-
-        <code id="pyconsole"></code>
-
 {% if cookiecutter.style_framework == "Bootstrap v4.6" %}
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
                 integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -31,9 +28,8 @@
                 integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
                 crossorigin="anonymous"></script>
 {% endif %}
-
         <py-config src="/pyscript.toml"></py-config>
-        <py-script output="pyconsole">
+        <py-script>
             import runpy
             result = runpy.run_module("{{ cookiecutter.module_name }}", run_name="__main__", alter_sys=True)
         </py-script>
