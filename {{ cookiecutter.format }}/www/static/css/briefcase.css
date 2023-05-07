@@ -1,15 +1,16 @@
 
-/* Unset the overly generic pyscript .label style */
-#app-placeholder .label {
-    margin-top: inherit;
-    color: inherit;
-    text-align: inherit;
-    width: inherit;
-    display: inherit;
-    color: inherit;
-    font-size: inherit;
-    margin-top: inherit;
+/* Hide the loading text */
+#pyscript-loading-label, #pyscript-operation-details {
+    display: none;
+}
 
+.py-pop-up::before {
+    content: url('../splash.png');
+}
+
+.py-pop-up .spinner::after {
+    top: inherit;
+    margin-top: 2em;
 }
 
 /*******************************************************************
