@@ -14,7 +14,9 @@
 }
 
 /*******************************************************************
- * WARNING: Do not remove or modify this comment block, or add any
- * content below this block. Briefcase will add content here during
- * the build step.
- ******************* Wheel contributed styles **********************/
+ * WARNING: Do not remove or modify anything between the CSS:start
+ * and CSS:end markers; this content is contributed by wheels, and
+ * is generated during the build step.
+ *******************************************************************/
+/*****@ CSS:start @*****/
+/*****@ CSS:end @*****/
