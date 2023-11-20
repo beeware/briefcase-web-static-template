@@ -9,11 +9,6 @@
     "version": "1.0",
     "build": "1",
     "python_version": "3.X.0",
-    "style_framework": [
-        "Shoelace v2.3",
-        "Bootstrap v4.6",
-        "None"
-    ],
     "_copy_without_render": [
         ".gitignore",
         "*.png"
