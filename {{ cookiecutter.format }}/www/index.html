@@ -7,8 +7,8 @@
 
         <link rel="icon" type="image/png" href="/static/logo-32.png"/>
 
-        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <link rel="stylesheet" href="https://pyscript.net/releases/2024.10.1/core.css">
+        <script type="module" src="https://pyscript.net/releases/2024.10.1/core.js"></script>
 
 {% if cookiecutter.style_framework == "Bootstrap v4.6" %}
         <link rel="stylesheet"
@@ -32,10 +32,9 @@
                 integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
                 crossorigin="anonymous"></script>
 {% endif %}
-        <py-config src="/pyscript.toml"></py-config>
-        <py-script>
+        <script type="py" async="false" config="pyscript.toml">
             import runpy
             result = runpy.run_module("{{ cookiecutter.module_name }}", run_name="__main__", alter_sys=True)
-        </py-script>
+        </script>
     </body>
 </html>
