@@ -7,6 +7,14 @@
 
         <link rel="icon" type="image/png" href="/static/logo-32.png"/>
 
+        <script type="module">
+            // Hide the splash screen when the page is ready.
+            import { hooks } from "https://pyscript.net/releases/2024.10.1/core.js";
+            hooks.main.onReady.add(() => {
+                document.getElementById("briefcase-splash").classList.add("hidden");
+            });
+        </script>
+
         <link rel="stylesheet" href="https://pyscript.net/releases/2024.10.1/core.css">
         <script type="module" src="https://pyscript.net/releases/2024.10.1/core.js"></script>
 
@@ -24,6 +32,10 @@
         <link rel="stylesheet" href="/static/css/briefcase.css">
     </head>
     <body id="app-placeholder">
+        <div id="briefcase-splash">
+            <img src="static/logo-32.png" alt="Splash screen logo">
+            <p>Loading...</p>
+        </div>
 {% if cookiecutter.style_framework == "Bootstrap v4.6" %}
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
                 integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
