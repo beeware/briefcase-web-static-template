@@ -1,5 +1,5 @@
 
-/* Make error content invisible */
+/* Prevent stderr appearing on the page. It will still be visible in the console. */
 div.py-error {
     display: none;
 }
