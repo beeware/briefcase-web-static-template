@@ -1,15 +1,41 @@
-
-/* Unset the overly generic pyscript .label style */
-#app-placeholder .label {
-    margin-top: inherit;
-    color: inherit;
-    text-align: inherit;
-    width: inherit;
-    display: inherit;
-    color: inherit;
-    font-size: inherit;
-    margin-top: inherit;
-
+/* Splash screen */
+div#briefcase-splash {
+    background-color:#999;
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
+div#briefcase-splash p {
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-family: sans-serif;
+}
+div#briefcase-splash.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.2s, opacity 0.2s linear;
+}
+div#briefcase-splash img {
+    animation: throbber 1.5s infinite;
+}
+@keyframes throbber {
+    0% {
+        transform: scale(1.2);
+    }
+    70% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.2);
+    }
 }
 
 /*******************************************************************

@@ -20,5 +20,6 @@
     ],
     "_extensions": [
         "briefcase.integrations.cookiecutter.PythonVersionExtension"
-    ]
+    ],
+    "_jinja2_env_vars": {"lstrip_blocks": true, "trim_blocks": true}
 }
