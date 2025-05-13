@@ -3,7 +3,6 @@
     "formal_name": "App Name",
     "description": "A short description of the app.",
     "homepage": "https://example.com",
-    "icon_social": "static/social-image.png",
     "app_name": "{{ cookiecutter.formal_name|lower|replace(' ', '-') }}",
     "module_name": "{{ cookiecutter.app_name|replace('-', '_') }}",
     "author": "Example Corporation",

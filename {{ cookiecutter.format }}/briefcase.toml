@@ -6,6 +6,5 @@ target_version = "0.3.21"
 app_path = "app"
 app_requirements_path = "requirements.txt"
 
-[icon]
-"32" = "www/static/logo-32.png"
-social = "www/static/social-image.png"
+icon.32 = "www/static/logo-32.png"
+icon.social = "www/static/social.png"
