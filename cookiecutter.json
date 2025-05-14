@@ -21,7 +21,11 @@
         "*.png"
     ],
     "_extensions": [
-        "briefcase.integrations.cookiecutter.PythonVersionExtension"
+        "briefcase.integrations.cookiecutter.PythonVersionExtension",
+        "briefcase.integrations.cookiecutter.XMLExtension"
     ],
-    "_jinja2_env_vars": {"lstrip_blocks": true, "trim_blocks": true}
+    "_jinja2_env_vars": {
+        "lstrip_blocks": true,
+        "trim_blocks": true
+    }
 }
