@@ -1,6 +1,8 @@
 {
     "format": "static",
     "formal_name": "App Name",
+    "description": "A short description of the app.",
+    "homepage": "https://example.com",
     "app_name": "{{ cookiecutter.formal_name|lower|replace(' ', '-') }}",
     "module_name": "{{ cookiecutter.app_name|replace('-', '_') }}",
     "author": "Example Corporation",
@@ -19,7 +21,11 @@
         "*.png"
     ],
     "_extensions": [
-        "briefcase.integrations.cookiecutter.PythonVersionExtension"
+        "briefcase.integrations.cookiecutter.PythonVersionExtension",
+        "briefcase.integrations.cookiecutter.XMLExtension"
     ],
-    "_jinja2_env_vars": {"lstrip_blocks": true, "trim_blocks": true}
+    "_jinja2_env_vars": {
+        "lstrip_blocks": true,
+        "trim_blocks": true
+    }
 }

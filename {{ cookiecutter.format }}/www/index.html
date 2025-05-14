@@ -3,9 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>{{ cookiecutter.formal_name }}</title>
+        <title>{{ cookiecutter.formal_name|xml_escape }}</title>
 
         <link rel="icon" type="image/png" href="/static/logo-32.png"/>
+
+        <!-- Social Sharing Metadata -->
+        <meta property="og:title" content="{{ cookiecutter.formal_name|xml_attr }}">
+        <meta property="og:description" content="{{ cookiecutter.description|xml_attr }}">
+        <meta property="og:url" content="{{ cookiecutter.homepage }}">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/static/social.png">
+
+        <!-- PyScript -->
 
         <script type="module">
             // Hide the splash screen when the page is ready.
@@ -17,6 +26,8 @@
 
         <link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css">
         <script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
+
+        <!-- App Style -->
 
 {% if cookiecutter.style_framework == "Bootstrap v4.6" %}
         <link rel="stylesheet"
