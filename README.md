@@ -3,7 +3,7 @@
 A [Cookiecutter](https://github.com/cookiecutter/cookiecutter/) template
 for building Python apps that will run as statically-served web pages
 
-# Using this template
+## Using this template
 
 The easiest way to use this project is to not use it at all - at least,
 not directly. [Briefcase](https://github.com/beeware/briefcase/) is a
@@ -23,11 +23,11 @@ However, if you *do* want use this template directly...
         $ cookiecutter https://github.com/beeware/briefcase-web-static-template
 
     This will ask you for a number of details of your application,
-    including the <span class="title-ref">name</span> of your
+    including the name of your
     application (which should be a valid PyPI identifier), and the
-    <span class="title-ref">Formal Name</span> of your application (the
+    Formal Name of your application (the
     full name you use to describe your app). The remainder of these
-    instructions will assume a <span class="title-ref">name</span> of
+    instructions will assume a name of
     `my-project`, and a formal name of `My Project`.
 
 3.  Build a wheel for your project, and add it to `www/static/wheels`.
@@ -66,12 +66,12 @@ with `www/pyscript.toml` containing:
         "other-1.2.3-py3-none-any.whl",
     ]
 
-You should now be able to serve the <span class="title-ref">www</span>
+You should now be able to serve the www
 folder as a static website:
 
     $ python -m httpd.server --directory www
 
-# Next steps
+## Next steps
 
 Of course, running Python code isn't very interesting by itself - you'll
 be able to output to the web console, but that won't be visible to most
