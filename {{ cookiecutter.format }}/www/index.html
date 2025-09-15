@@ -16,16 +16,8 @@
 
         <!-- PyScript -->
 
-        <script type="module">
-            // Hide the splash screen when the page is ready.
-            import { hooks } from "https://pyscript.net/releases/<!--@@ pyscript_version @@-->/core.js";
-            hooks.main.onReady.add(() => {
-                document.getElementById("briefcase-splash").classList.add("hidden");
-            });
-        </script>
-
-        <link rel="stylesheet" href="https://pyscript.net/releases/<!--@@ pyscript_version @@-->/core.css">
-        <script type="module" src="https://pyscript.net/releases/<!--@@ pyscript_version @@-->/core.js"></script>
+        <!--@@ PyScript:start @@-->
+        <!--@@ PyScript:end @@-->
 
         <!-- Toolkit Content Inserts -->
 
