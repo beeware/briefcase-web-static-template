@@ -38,13 +38,10 @@ div#briefcase-splash img {
     }
 }
 
-
-/*******************************************************************
- * WARNING: Do not remove or modify this comment block, or add any
- * content below this block, including anything between the CSS
- * markers. Briefcase will add content here during the build step.
-******************* Wheel contributed styles **********************/
-
 /************************* Toolkit styles *************************/
+
+/* WARNING: Do not modify content between the @@ CSS:start @@ and
+   @@ CSS:end @@ markers. */
+
 /*@@ CSS:start @@*/
 /*@@ CSS:end @@*/
