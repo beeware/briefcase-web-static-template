@@ -16,8 +16,8 @@
 
         <!-- Python Backend -->
 
-        <!--@@ python:start @@-->
-        <!--@@ python:end @@-->
+        <!--@@ head-python:start @@-->
+        <!--@@ head-python:end @@-->
 
         <!-- Toolkit Head Insert (any valid <head> content)-->
 
@@ -35,13 +35,8 @@
         <!--@@ body-start:start @@-->
         <!--@@ body-start:end @@-->
 
-
-        <script type="py" async="false" config="pyscript.toml">
-            import runpy
-            result = runpy.run_module(
-                "{{ cookiecutter.module_name }}", run_name="__main__", alter_sys=True
-            )
-        </script>
+        <!--@@ body-python:start @@-->
+        <!--@@ body-start:end @@-->
 
         <!-- Toolkit Body Insert (any valid <script> tags)-->
 
