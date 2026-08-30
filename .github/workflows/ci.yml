@@ -31,12 +31,15 @@ jobs:
   verify-apps:
     name: Build apps
     needs: pre-commit
-    uses: beeware/.github/.github/workflows/app-build-verify.yml@main
+    # TESTING: temporarily points at the fork/branch with the -vvv debug fix (#221)
+    uses: BabuDip/Beeware.github/.github/workflows/app-build-verify.yml@add-ci-verbose-logging-221-v2
     with:
       runner-os: ${{ matrix.runner-os }}
       framework: ${{ matrix.framework }}
       target-platform: web
       target-format: static
+      workflow-repo: BabuDip/Beeware.github
+      workflow-repo-ref: add-ci-verbose-logging-221-v2
     strategy:
       matrix:
         runner-os: [ "macos-latest", "windows-latest", "ubuntu-latest" ]
