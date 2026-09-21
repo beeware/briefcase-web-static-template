@@ -39,5 +39,5 @@ jobs:
       target-format: static
     strategy:
       matrix:
-        runner-os: [ "macos-latest", "windows-latest", "ubuntu-latest" ]
+        runner-os: [ "macos-26", "windows-2025", "ubuntu-24.04" ]
         framework: ["toga"]
